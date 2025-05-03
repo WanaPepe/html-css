@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @font-face {
     font-family: 'passion';
     src: url('fontes/passion-one-bold.ttf') format('truetype');
@@ -12,31 +14,40 @@
     margin: 0px;
 }
 
+body {
+    min-height: 100vh;
+    background-color: gray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 header {
     background-color: black;
     color: white;
+    text-align: center;
+}
+
+header > h1 {
     font-family: 'passion', sans-serif;
     font-weight: bold;
-    font-size: 4.3em;
-    text-align: center;
-    padding: 50px;
+    font-variant: small-caps;
+    padding-top: 50px;
+    font-size: 10vw;
 }
 
-nav {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.3em;
-    font-weight: normal;
-    padding: 10px;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-a {
+header > p { 
+    font-size: 1em;
     color: white;
-    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: white;
+    font-weight: bolder;
     text-decoration: none;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
 }
 
 main {
@@ -44,17 +55,17 @@ main {
     font-family: 'sriracha', Helvetica, sans-serif;
 }
 
-p {
-    padding: 50px 0px 50px 0px;
+section {
+    font-size: 3.5vw;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
     color: black;
 }
 
-section {
-    font-size: 3.5em;
-    padding: 60px;
-}
-
 section.imagem1 {
+    background-color: black;
     height: 800px;
     background-image: url('imagens/background001.jpg');
     background-size: cover;
@@ -64,11 +75,13 @@ section.imagem1 {
 
 section.imagem1 > p {
     background-color: rgba(0, 0, 0, 0.507);
-    width: 700px;
+    display: inline-block;
+    padding: 5px;
     color: white;
 }
 
 section.imagem2 {
+    background-color: brown;
     height: 800px;
     background-image: url('imagens/background002.jpg');
     background-size: cover;
@@ -84,10 +97,15 @@ section.imagem2 > p {
 
 footer {
     background-color: black;
-    padding: 10px;
+    padding: 1px;
     text-align: center;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
+}
+
+footer > p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
