@@ -21,7 +21,7 @@ header {
 
 header > h1 {
     font-weight: bolder;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
 }
 
@@ -60,10 +60,10 @@ menu ul > li > a:hover {
 }
 
 main {
-    width: 80vw;
+    width: 90vw;
     background-color: white;
     margin: auto;
-    padding: 10px;
+    padding: 20px;
     border-radius: 10px;
     margin-top: 10px;
 }
@@ -73,6 +73,16 @@ article > h2 {
 }
 
 article > p {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     text-align: justify
+}
+
+main > article > p > a {
+    color: #005de9;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+p > a:hover {
+    text-decoration: underline;
 }
