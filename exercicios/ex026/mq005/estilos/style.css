@@ -50,6 +50,7 @@ menu > ul > li >a {
     text-decoration: none;
     display: block;
     padding: 10px;
+    margin-bottom: 10px;
     border: 1px solid white;
     text-align: center;
 }
@@ -69,11 +70,12 @@ main {
 }
 
 article > h2 {
-    padding: 30px 0px 30px 0px;
+    padding: 20px 0px 30px 0px;
+    margin-bottom: 30px;
 }
 
 article > p {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     text-align: justify
 }
 
@@ -85,4 +87,10 @@ main > article > p > a {
 
 p > a:hover {
     text-decoration: underline;
+}
+
+article::after {
+    content: '*Dados de recomendação da Booking.com de acordo com os destinos mais relevantes e recomendados por viajantes brasileiros pelo café e cafeterias. ';
+    font-size: 0.8em;
+    
 }
